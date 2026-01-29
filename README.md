@@ -4,7 +4,9 @@
 
 _Based on a now defunct official [Yazi extension recommendation](https://yazi-rs.github.io/docs/tips/#navigation-wraparoun)._
 
-<TBD: screenshot>
+## Screenshot
+
+![Screenshot](/demo.gif)
 
 ## Requirements
 
@@ -24,7 +26,7 @@ Add this to your `init.lua`:
 require("smart-arrow"):setup()
 ```
 
-Add this to your `keymap.toml`
+Add this to your `keymap.toml`:
 
 ```toml
 [[mgr.prepend_keymap]]
