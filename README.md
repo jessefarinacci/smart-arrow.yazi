@@ -2,6 +2,8 @@
 
 [Yazi](https://github.com/sxyazi/yazi) plugin that functions as a drop-in replacement for the internal [arrow](https://yazi-rs.github.io/docs/configuration/keymap/#mgr.arrow) subcommand to wrap to top/bottom of directories
 
+_Based on a now defunct official [Yazi extension recommendation](https://yazi-rs.github.io/docs/tips/#navigation-wraparoun)._
+
 <TBD: screenshot>
 
 ## Requirements
@@ -26,19 +28,19 @@ Add this to your `keymap.toml`
 
 ```toml
 [[mgr.prepend_keymap]]
+desc = "Move cursor to the next entry, or wrap to top of directory"
 on = "<down>"
 run = "plugin smart-arrow '+1'"
-desc = "Move cursor to the next entry, or wrap to top of directory"
 [[mgr.prepend_keymap]]
+desc = "Move cursor to the previous entry, or wrap to bottom of directory"
 on = "<up>"
 run = "plugin smart-arrow '-1'"
-desc = "Move cursor to the previous entry, or wrap to bottom of directory"
 [[mgr.prepend_keymap]]
+desc = "Move cursor to the next entry, or wrap to top of directory"
 on = "j"
 run = "plugin smart-arrow '+1'"
-desc = "Move cursor to the next entry, or wrap to top of directory"
 [[mgr.prepend_keymap]]
+desc = "Move cursor to the previous entry, or wrap to bottom of directory"
 on = "k"
 run = "plugin smart-arrow '-1'"
-desc = "Move cursor to the previous entry, or wrap to bottom of directory"
 ```
